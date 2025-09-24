@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Roulette Game</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #222;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    canvas {
+      display: block;
+      margin: auto;
+    }
+    .controls {
+      margin: 20px;
+    }
+    input, select, button {
+      padding: 8px;
+      font-size: 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Roulette Game</h1>
+  <p>Click on the wheel to spin after placing your bet.</p>
+
+  <div class="controls">
+    <label>Bet Amount: $</label>
+    <input type="number" id="betAmount" value="10" min="1">
+    
+    <label>Bet Type:</label>
+    <select id="betType">
+      <option value="red">Red</option>
+      <option value="black">Black</option>
+      <option value="green">Green (0)</option>
+    </select>
+
+    <button id="play">play</button>
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
